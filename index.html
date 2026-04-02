@@ -1,0 +1,71 @@
+<!-- Задание 1: Выбор всех h2 внутри элемента с id -->
+<div id="elem">
+	<h2>Заголовок 1</h2>
+	<p>Параграф 1</p>
+	<h2>Заголовок 2</h2>
+	<p>Параграф 2</p>
+</div>
+<h2>Не выбирается</h2>
+<p>Не выбирается</p>
+<style>
+#elem h2 {
+	color: red;
+}
+</style>
+
+<!-- Задание 2: Выбор всех элементов с классом text внутри элемента с id -->
+<div id="elem">
+	<p class="text">Текст 1</p>
+	<p class="text">Текст 2</p>
+	<ul>
+		<li class="text">Элемент списка 1</li>
+		<li class="text">Элемент списка 2</li>
+		<li class="text">Элемент списка 3</li>
+		<li>Элемент списка 4</li>
+		<li>Элемент списка 5</li>
+	</ul>
+</div>
+<p class="text">Вне блока</p>
+<style>
+#elem .text {
+	color: green;
+}
+</style>
+
+<!-- Задание 3: Выбор всех абзацев с классом text внутри элемента с id -->
+<div id="elem">
+	<p class="text">Параграф 1</p>
+	<p class="text">Параграф 2</p>
+	<ul>
+		<li class="text">Элемент списка 1</li>
+		<li class="text">Элемент списка 2</li>
+		<li class="text">Элемент списка 3</li>
+		<li>Элемент списка 4</li>
+		<li>Элемент списка 5</li>
+	</ul>
+</div>
+<p class="text">Параграф вне блока</p>
+<style>
+#elem p.text {
+	color: blue;
+}
+</style>
+
+<!-- Задание 4: Выбор всех li с классом text внутри элемента с id -->
+<div id="elem">
+	<p class="text">Параграф 1</p>
+	<p class="text">Параграф 2</p>
+	<ul>
+		<li class="text">Список 1</li>
+		<li class="text">Список 2</li>
+		<li class="text">Список 3</li>
+		<li>Список 4</li>
+		<li>Список 5</li>
+	</ul>
+</div>
+<p class="text">Параграф вне блока</p>
+<style>
+#elem li.text {
+	color: orange;
+}
+</style>
